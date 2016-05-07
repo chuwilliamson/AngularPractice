@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .input{
+        color:white;
+    }
+    h1{
+        background-color: salmon        
+    }
+    body{
+        background-color: white;
+        text-align: center;
+        color:blue
+    }
+    p{
+        background-color: cyan;
+        text-align: left;
+        color:red;
+    }
+    </style>
+<!-- this is from the internet -->
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<!-- this is a file in the directory --> 
+<script src = "scripts/test.js"></script>
+<body>
+    <!--wrap our html content in an angular module -->
+    <div ng-app="">
+        <h1>Web Page</h1>
+            <p class = "input">Input: <input type = "text" ng-model="name" placeholder="CLICK ME!"></p>
+            <!-- id is the reference to the div from javascript-->
+            <p id="demo">1</p>
+
+<button type="button" onclick="myFunction()">{{name}}</button>
+    </div>
+</body>
+</html>
